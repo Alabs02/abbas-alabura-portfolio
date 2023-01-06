@@ -8,21 +8,12 @@ interface IFooterItem {
 }
 
 const FooterItem: FC<IFooterItem> = ({ title, to, uuid }) => {
-  const openMailApp = (e: any) => {
-    if (to !== '#') {
-      return;
-    }
-
-    window.location.href = 'mailto:abbasalabura@gmail.com';
-    e.preventDefault();
-  };
-
   return (
     <Fragment>
       <div className="footer__item" key={uuid()}>
-        <Link className="footer__link" to={to} onClick={(e) => openMailApp(e)}>
+        <a className="footer__link" target="_blank" href={to}>
           {title}
-        </Link>
+        </a>
 
         <div className="footer__spacer"></div>
 

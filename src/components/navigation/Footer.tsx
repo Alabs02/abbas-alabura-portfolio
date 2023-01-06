@@ -7,16 +7,16 @@ import { FooterItem } from '@/components/navigation';
 const Footer = () => {
   const footerItems = [
     {
-      title: 'abbasalabura[at]gmail.com',
-      to: '#',
+      title: 'abbasalabson[at]gmail.com',
+      to: 'mailto:abbasalabson@gmail.com',
     },
     {
       title: 'LinkedIn',
-      to: '/linkedIn',
+      to: 'https://www.linkedin.com/in/abbas-alabura',
     },
     {
       title: 'Behance',
-      to: '/behance',
+      to: 'https://www.behance.net/abbasaliyualabura',
     },
   ];
 
