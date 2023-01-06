@@ -1,0 +1,49 @@
+.design-card {
+  @apply
+    m-0
+    block
+    text-left
+    w-full
+    min-h-[480px]
+    rounded-[2px]
+    pt-10
+    px-8
+    overflow-hidden
+    cursor-pointer
+    focus:animate-ping;
+
+  &__heading {
+    @apply
+      mb-3
+      text-white
+      text-lg
+      font-avenir-next;
+  }
+
+  &__line {
+    @apply
+      w-[10%]
+      h-[4px]
+      bg-[white];
+  }
+
+  &__copy {
+    @apply
+      mt-10
+      text-white;
+  }
+
+  &__media  {
+    @apply
+      mt-10
+      w-full
+      h-full;
+
+    img {
+      @apply
+        w-full
+        h-full
+        object-cover;
+    }
+  }
+}

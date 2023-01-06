@@ -1,0 +1,31 @@
+.info-card {
+  @apply
+    flex
+    flex-col
+    items-end
+    min-h-[280px];
+
+  &__content {
+    @apply
+      mb-5
+      text-2xl
+      text-justify
+      laptop:text-right
+      text-secondary
+      w-full
+      laptop:w-[90%]
+      font-avenir-next
+      leading-[2.5rem];
+  }
+
+  &__link {
+    @apply
+      text-xl
+      font-semibold
+      text-secondary
+      hover:text-dark-primary
+      focus:text-dark-primary
+      duration-1000
+      ease-in-out;
+  }
+}

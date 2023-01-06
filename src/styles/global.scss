@@ -1,0 +1,25 @@
+// LIBRARY
+@import 'library';
+
+// LAYOUTS
+@import 'layouts';
+
+// PAGES
+@import 'pages';
+
+// CORE COMPONENTS
+@import 'core';
+
+// NAVIGATIONS COMPONENTS
+@import 'navigation';
+
+// TAILWIND CSS
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Override default variable */
+// $skeleton-element-color: var(--bg-accent-dark-100);
+
+/* Then import scss source file */
+@import 'skeleton-screen-css/dist/index.scss';

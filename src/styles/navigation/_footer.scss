@@ -1,0 +1,45 @@
+.footer {
+  @apply
+    h-40
+    w-full
+    grid
+    place-items-center;
+  background-color: darken($color: #f7fbfc, $amount: 1%);
+
+  &__wrapper {
+    @apply
+      w-[80%]
+      flex
+      justify-between;
+  }
+
+  &__item {
+    @apply
+      relative;
+  }
+
+  &__link {
+    @apply
+      font-bold
+      text-secondary
+      tracking-wide
+      duration-1000
+      ease-in-out
+      animate-pulse
+      hover:text-dark-primary;
+  }
+
+  &__spacer {
+    @apply
+      h-1;
+  }
+
+  &__line {
+    @apply
+      h-1
+      duration-1000
+      ease-in-out
+      hidden
+      bg-dark-primary;
+  }
+}

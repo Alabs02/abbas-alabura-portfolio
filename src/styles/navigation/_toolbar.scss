@@ -1,0 +1,66 @@
+.toolbar {
+  @apply
+    grid
+    w-full
+    place-items-center;
+
+  &__wrapper {
+    @apply
+      w-[80%]
+      m-0
+      p-0
+      flex
+      justify-between;
+  }
+
+  &__logo {
+    @apply
+      m-0
+      p-0
+      cursor-pointer
+    text-dark-primary;
+
+    &-letter {
+      @apply
+        text-3xl
+        font-extrabold;
+    }
+
+    &-line {
+      @apply
+        h-[6px]
+        w-full
+        bg-dark-primary;
+    }
+  }
+
+  &__items {
+    @apply
+      flex
+      gap-6
+      items-center;
+  }
+
+  &__link {
+    @apply
+      font-bold
+      text-[18px]
+      duration-1000
+      ease-in-out
+      animate-pulse
+      text-secondary
+      hover:text-dark-primary;
+
+    &--inactive {
+      @apply
+        text-secondary;
+    }
+
+    &--active {
+      @apply
+        text-dark-primary;
+    }
+
+  
+  }
+}

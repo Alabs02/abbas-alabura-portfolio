@@ -1,0 +1,22 @@
+.home-page {
+  @apply
+    w-full
+    h-full;
+
+    &__header {
+      @apply
+        text-center
+        text-4xl
+        font-dela-gothic
+        tracking-wide;
+    }
+
+    &__main {
+      @apply
+        mt-[100px]
+        grid
+        gap-8
+        grid-cols-1
+        laptop:grid-cols-2;
+    }
+}

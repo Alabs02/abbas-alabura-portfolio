@@ -1,0 +1,27 @@
+.about-page {
+  @apply
+    flex
+    flex-col
+    items-center;
+
+  &__wrapper {
+    @apply
+      w-[90%]
+      laptop:w-[70%];
+  }
+
+  &__heading {
+    @apply
+      mb-10
+      font-dela-gothic
+      text-3xl
+      leading-[3rem];
+  }
+
+  &__content {
+    @apply
+      text-justify
+      text-xl
+      leading-9;
+  }
+}

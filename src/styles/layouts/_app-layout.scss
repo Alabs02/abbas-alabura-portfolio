@@ -1,0 +1,32 @@
+.app-layout {
+  @apply
+    w-full
+    min-h-screen
+    overflow-x-hidden;
+
+  &__wrapper {
+      @apply
+        w-full
+        grid
+        min-h-screen;
+
+    grid-template-rows: 120px auto 160px;
+  }
+
+  &__body {
+    @apply
+      py-12
+      w-full
+      h-full
+      flex
+      flex-col
+      items-center;
+
+    &-container {
+      @apply
+        w-[90%]
+        laptop:w-[70%]
+        desktop:w-[60%];
+    }
+  }
+}
