@@ -1,0 +1,14 @@
+.app-button {
+  @apply
+    p-1
+    h-16
+    w-16
+    cursor-pointer
+    rounded-[2px]
+    transition-all
+    duration-700
+    ease-in-out
+    bg-light-primary
+    hover:scale-110
+    focus:animate-pulse;
+}

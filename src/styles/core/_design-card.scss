@@ -4,11 +4,35 @@
     block
     text-left
     w-full
+    relative
     min-h-[480px]
     rounded-[2px]
-    pt-8
     overflow-hidden
-    cursor-pointer;
+    cursor-pointer
+    transition-all
+    duration-1000
+    ease-in-out;
+
+  &::before {
+    content: "";
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  &:hover {
+    &::before {
+      display: block !important;
+    }
+
+    .design-card__panel {
+      display: flex !important;
+    }
+  }
 
   &__body {
     @apply
@@ -17,6 +41,7 @@
 
   &__heading {
     @apply
+      mt-6
       mb-3
       text-white
       text-lg
@@ -49,14 +74,24 @@
         w-full
         h-full
         overflow-hidden;
-    }
 
-    img {
-      @apply
-        mt-[-88px]
-        w-full
-        h-full
-        object-contain;
-    }
+      img {
+        @apply
+          mt-[-88px]
+          w-full
+          h-full
+          object-contain;
+      }
+    }    
+  }
+
+  &__panel {
+    @apply
+      hidden
+      absolute
+      bottom-6
+      px-6
+      w-full
+      justify-between;
   }
 }
