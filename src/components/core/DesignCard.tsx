@@ -49,9 +49,7 @@ const DesignCard: FC<IProps> = ({
         </div>
 
         <div className="design-card__panel">
-          {figma_url && (
-            <Button url={figma_url} img={'/static/icons/figma-icon.png'} />
-          )}
+          {figma_url && <Button url={figma_url} img={'/static/icons/figma-icon.png'} />}
 
           {behance_url && (
             <Button url={behance_url} img={'/static/icons/behance-icon.png'} />
