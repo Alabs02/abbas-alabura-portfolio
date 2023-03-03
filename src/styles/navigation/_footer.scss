@@ -2,8 +2,11 @@
   @apply
     h-40
     w-full
-    grid
-    place-items-center;
+   flex
+   flex-col
+   items-center
+   laptop:flex-row
+   laptop:justify-center;
   background-color: darken($color: #f7fbfc, $amount: 1%);
 
   &__wrapper {
