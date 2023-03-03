@@ -1,6 +1,14 @@
 {
   "designs": [
     {
+      "title": "Eden View",
+      "description": "Eden View is a web-based application for a real estate agency that helps property buyers and sellers connect with each other. It provides a user-friendly interface for property search and listing, allowing users to view property details, photos, and videos, and contact agents directly.",
+      "image": "/static/images/eden-view-thumbnail.svg",
+      "backgroundColor": "#27D4DF",
+      "figma_url": "https://bit.ly/EdenViewPrototype",
+      "behance_url": "https://www.behance.net/gallery/162253379/Eden-View-Real-Estate"
+    },
+    {
       "title": "Mees Palace",
       "description": "Easy-to-use platform for discovering and booking movie tickets, with showtimes, reviews, and trailers all in one place",
       "image": "/static/images/mees-palace-thumbnail.svg",
